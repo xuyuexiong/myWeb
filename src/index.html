@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>给回忆留下的一席之地</title>
+    <!--网页标题左侧显示-->
+    <link rel="icon" href="./assets/img/bitbug_favicon.ico" type="image/x-icon">
+    <!--收藏夹显示图标-->
+    <link rel="shortcut icon" href="./assets/img/bitbug_favicon.ico" type="image/x-icon">
+    <!-- Edit Below -->
+    <script type="text/javascript" src="./assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/js/jquery.let_it_snow.js"></script>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <script type="text/javascript">
+        window.onload = function () {
+            //判断访问终端
+            var browser = {
+                versions: function () {
+                    var u = navigator.userAgent,
+                        app = navigator.appVersion;
+                    return {
+                        trident: u.indexOf('Trident') > -1, //IE内核
+                        presto: u.indexOf('Presto') > -1, //opera内核
+                        webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+                        gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+                        mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+                        ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                        android: u.indexOf('Android') > -1 || u.indexOf('Adr') > -1, //android终端
+                        iPhone: u.indexOf('iPhone') > -1, //是否为iPhone或者QQHD浏览器
+                        iPad: u.indexOf('iPad') > -1, //是否iPad
+                        webApp: u.indexOf('Safari') == -1, //是否web应该程序，没有头部与底部
+                        weixin: u.indexOf('MicroMessenger') > -1, //是否微信 （2015-01-22新增）
+                        qq: u.match(/\sQQ/i) == " qq" //是否QQ
+                    };
+                }(),
+                language: (navigator.browserLanguage || navigator.language).toLowerCase()
+            };
+
+            //判断是否是为移动端
+            if (browser.versions.mobile) {
+                // $(location).attr('href', './select.html');
+                $('.mobile').css('display','flex');
+            }else{
+                $('.pc').css('display','block');
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="pc" style="display: none;">
+        <div class="main">
+            <div class="bg">
+                <img src="./assets/img/4.jpg">
+            </div>
+            <div class="snowing">
+                <canvas class="snow"></canvas>
+            </div>
+            <div class="hide">
+                <div class="second"></div>
+            </div>
+        </div>
+        <div class="enter">
+            <a href="#">入口</a>
+        </div>
+    </div>
+    <div class="mobile" style="display: none;">
+        抱歉啦，移动端页面正在加紧制作中，现仅支持PC端哦~\(≧▽≦)/~
+    </div>
+    <script type="text/javascript" src="./assets/js/index.js"></script>
+</body>
+<script type="text/javascript">
+    $(window).resize(function () { //当浏览器大小变化时
+        window.location.reload();
+    });
+</script>
+
+</html>

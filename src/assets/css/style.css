@@ -1,0 +1,90 @@
+/* Custom Stylesheet */
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    background: #222;
+    text-align: center;
+}
+
+
+
+
+/* ALL DEMO */
+.main{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.bg{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.snowing{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+.enter{
+    position: fixed;
+    bottom: 8%;
+    right: 6%;
+    z-index: 10;
+}
+.enter a{
+    font-size: 48px;
+    color: #896a6a;
+    text-decoration: none;
+}
+.hide{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.second{
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+.pc{
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+.mobile{
+    font-family: "Comic Sans MS", sans-serif;
+    font-weight: bold;
+    background: #ffffff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}

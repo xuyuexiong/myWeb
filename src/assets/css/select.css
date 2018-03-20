@@ -1,0 +1,95 @@
+/* Custom Stylesheet */
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    background: #222;
+    text-align: center;
+}
+.clear{
+    clear: both;
+    content: '';
+    
+}
+
+body{
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: url(../img/select/2.jpg) 100% 100%;
+    width: 100%;
+    height: 100%;
+}
+.selectBox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.story_box{
+    float: left;
+    width: 25%;
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg1{
+    background: url(../img/select/color_1.jpg) 100% 100%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.bg2{
+    background: url(../img/select/color_2.jpg) 100% 100%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.bg3{
+    background: url(../img/select/color_3.jpg) 100% 100%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.bg4{
+    background: url(../img/select/color_4.jpg) 100% 100%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.story{
+    color: #5a5858;
+    font-size: 46px;
+    position: relative;
+    width: 46px;
+    z-index: 10;
+    font-weight: 600;
+    font-family: "Microsoft YaHei";
+    cursor: default;
+}
+.loading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+}
+
