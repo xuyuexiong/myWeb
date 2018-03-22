@@ -1,0 +1,144 @@
+/*
+* @Author: xuyuexiong
+* @Date:   2017-12-04 14:57:58
+* @Last Modified by:   xuyuexiong
+* @Last Modified time: 2017-12-07 16:56:08
+*/
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    background: #222;
+    text-align: center;
+    background: url(../img/story/wenli.jpg);
+}
+
+.clear {
+    clear: both;
+    content: '';
+}
+
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.photoBox {
+    position: relative;
+    width: 100%;
+    min-height: 980px;
+}
+
+.photo_title p{
+    color: #5a5858;
+    font-size: 40px;
+    position: relative;
+    z-index: 20;
+    font-weight: 600;
+    font-family: "Microsoft YaHei";
+    cursor: default;
+}
+
+.content {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+
+/*图片样式*/
+
+.waterfull {
+    margin: 0 auto;
+}
+
+.waterfull ul li {
+    float: left;
+    width: 300px;
+    padding: 8px;
+    margin: 0 6px 10px;
+    background: #fff;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+    border: solid 1px #BCBCBC;
+    box-shadow: 0 0 10px #BCBCBC;
+}
+
+.a-img img {
+    opacity: 0.7;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+}
+
+.a-img:hover img {
+    opacity: 0.5;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.figcaption {
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 2em;
+    width: 100%;
+    height: 28%;
+    cursor: default;
+}
+
+.item h2,
+.item p {
+    -webkit-transform: translate3d(0, 40px, 0);
+    transform: translate3d(0, 40px, 0);
+}
+
+.item h2 {
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+}
+
+.item p {
+    color: rgba(255, 255, 255, 0.8);
+    opacity: 0;
+    -webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
+    transition: opacity 0.2s, transform 0.35s;
+}
+
+.item:hover img,
+.item:hover p {
+    opacity: 1;
+}
+
+.item:hover img,
+.item:hover h2,
+.item:hover p {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+
+/*图片描述样式*/
+
+.figcaption_title {
+    color: #4F4F4F;
+}

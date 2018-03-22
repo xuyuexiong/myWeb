@@ -1,0 +1,279 @@
+/*
+* @Author: xuyuexiong
+* @Date:   2017-11-27 17:00:42
+* @Last Modified by:   xuyuexiong
+* @Last Modified time: 2017-12-20 13:45:21
+*/
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clear {
+    clear: both;
+    content: '';
+}
+
+.main {
+    position: relative;
+    min-width: 1903px;
+}
+
+.blog_nav {
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    z-index: 10;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    cursor: default;
+    font-family: "Microsoft YaHei";
+    float: left;
+    margin-left: 50px;
+}
+
+.nav {
+    float: right;
+    margin-right: 100px;
+}
+
+.nav_list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav_list li {
+    float: left;
+    color: #b6b7ba;
+    font-size: 22px;
+    margin-left: 40px;
+    cursor: default;
+}
+
+.blog_img {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.blog_img img {
+    width: 100%;
+}
+
+.mask {
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #000;
+    opacity: .4;
+}
+
+.text {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    position: absolute;
+    left: 0;
+    top: 45%;
+    margin-top: -67.5px;
+    text-align: center;
+    color: #fff;
+    font-size: 60px;
+    cursor: default;
+    font-family: "Microsoft YaHei";
+}
+
+.text_word {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    position: absolute;
+    left: 0;
+    top: 60%;
+    margin-top: -67.5px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    cursor: default;
+    font-family: "Microsoft YaHei";
+}
+
+.content {
+    position: relative;
+}
+
+.blog_left {
+    width: 1000px;
+    position: relative;
+    margin-left: 90px;
+    float: left;
+}
+
+.blog_articles {
+    background: #fff;
+    margin-top: 30px;
+    position: relative;
+}
+
+.articles_img {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.articles_title {
+    font-family: "Microsoft YaHei";
+    font-size: 30px;
+    text-align: left;
+    padding: 20px;
+}
+
+.articles_section {
+    padding: 20px;
+}
+
+.articles_section p {
+    font-family: "Microsoft YaHei";
+    font-size: 20px;
+    text-align: left;
+    margin: 0;
+    color: #8a8a8a;
+}
+
+.blog_right {
+    width: 550px;
+    position: relative;
+    margin-left: 50px;
+    float: left;
+}
+
+.blog_about {
+    background: #fff;
+    margin-top: 130px;
+    width: 100%;
+    position: relative;
+}
+
+.about_title {
+    font-family: "Microsoft YaHei";
+    font-size: 24px;
+    text-align: left;
+    padding: 130px 0 20px 40px;
+}
+
+.about_section {
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+    text-align: left;
+    padding: 0 40px 20px 40px;
+    color: #8a8a8a;
+}
+
+.about_touxiang {
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 175px;
+    top: -100px;
+}
+
+.blog_catalog {
+    background: #fff;
+    margin-top: 30px;
+    width: 100%;
+    position: relative;
+}
+
+.catalog_title {
+    font-family: "Microsoft YaHei";
+    font-size: 24px;
+    text-align: left;
+    padding: 30px 0 20px 40px;
+}
+
+.catalog_list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.catalog_list li {
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+    text-align: left;
+    padding: 0 40px 20px 40px;
+    color: #8a8a8a;
+}
+
+.footer {
+    width: 100%;
+    height: 80px;
+    background: #222831;
+    margin-top: 100px;
+}
+
+.footer_word {
+    color: #909397;
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+    cursor: default;
+    /*line-height: 80px;*/
+}
+
+.footer_word a {
+    color: #909397;
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+}
+
+.footer_word a:hover {
+    text-decoration: underline;
+}
+
+.beian {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.wangan {
+    margin-top: 10px;
+}
+.wangan-logo{
+    display: flex;
+    justify-content: center;
+}

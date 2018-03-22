@@ -11,33 +11,38 @@
     <link rel="shortcut icon" href="./assets/img/bitbug_favicon.ico" type="image/x-icon">
     <!-- Edit Below -->
     <script type="text/javascript" src="./assets/js/jquery.min.js"></script>
-    <script type="text/javascript" src="./assets/js/jquery.let_it_snow.js"></script>
     <link rel="stylesheet" type="text/css" href="./assets/css/select.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/loading.css" />
 </head>
 
 <body>
     <div class="selectBox" style="display:none;">
-        <div class="story_box">
-            <div class="bg1 change" style="display:none;"></div>
-            <div class="story">我们的故事</div>
-        </div>
-        <div class="story_box">
-            <div class="bg2 change" style="display:none;"></div>
-            <div class="story">那些想看的照片</div>
-        </div>
+        <a href="./story.html" target="_about">
+            <div class="story_box">
+                <div class="bg1 change" style="display:none;"></div>
+                <div class="black1"></div>
+                <div class="story">我们的故事</div>
+            </div>
+        </a>
+        <a href="./photo.html" target="_about">
+            <div class="story_box">
+                <div class="bg2 change" style="display:none;"></div>
+                <div class="black2"></div>
+                <div class="story">那些想看的照片</div>
+            </div>
+        </a>
         <div class="story_box">
             <div class="bg3 change" style="display:none;"></div>
+            <div class="black3"></div>
             <div class="story">敬请期待...</div>
         </div>
         <div class="story_box">
             <div class="bg4 change" style="display:none;"></div>
+            <div class="black4"></div>
             <div class="story">敬请期待...</div>
         </div>
-
         <div class="clear"></div>
     </div>
-
     <!-- 加载动画 -->
     <div class="loading">
         <div class="loader font4">
@@ -53,13 +58,13 @@
 </body>
 <script type="text/javascript" src="./assets/js/select.js"></script>
 <script type="text/javascript">
-    window.onload = function () {
-        // 两秒后展示
-        var timeOut = setTimeout(function(){
-            $(".loading").fadeOut(1000);
-            $(".selectBox").fadeIn();
-        }, 2000);
-    }; 
+window.onload = function() {
+    // 两秒后展示
+    var timeOut = setTimeout(function() {
+        $(".loading").fadeOut(1000);
+        $(".selectBox").fadeIn();
+    }, 2000);
+};
 </script>
 
 </html>

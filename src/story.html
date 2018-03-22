@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>给回忆留下的一席之地</title>
+    <!--网页标题左侧显示-->
+    <link rel="icon" href="./assets/img/bitbug_favicon.ico" type="image/x-icon">
+    <!--收藏夹显示图标-->
+    <link rel="shortcut icon" href="./assets/img/bitbug_favicon.ico" type="image/x-icon">
+    <!-- Edit Below -->
+    <script type="text/javascript" src="./assets/js/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./assets/css/loading.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/story.css" />
+</head>
+
+<body>
+    <div class="Box_story">
+        <div class="story_shu">
+            <img src="./assets/img/story/1.png">
+        </div>
+        <div class="autotype" id="autotype">
+            <p>Our Story</p>
+            <p>相识，也许是缘分，也许是注定</p>
+            <p>平淡的开始，充满了爱，也充满了温馨</p>
+            <p>要问我们的故事</p>
+            <p>我只知道，每个瞬间，都已长埋进我的心底</p>
+            <p>俯首案前，在文字里编织一个又一个和你的故事</p>
+            <p>...</p>
+        </div>
+        <div class="story_clk">
+            <a title="想知道就点两下">告诉你一个秘密</a>
+        </div>
+        <div class="story_time">
+            <span>原来，我们已经度过了</span>
+            <span class="storyDay"></span>
+            <span>天</span>
+            <span class="storyHour"></span>
+            <span>小时</span>
+            <span class="storyMin"></span>
+            <span>分钟</span>
+            <span class="storySec"></span>
+            <span>秒</span>
+        </div>
+    </div>
+    <!-- 加载动画 -->
+    <div class="loading">
+        <div class="loader font4">
+            <span>L</span>
+            <span class="span2">O</span>
+            <span class="span3">A</span>
+            <span class="span4">D</span>
+            <span class="span5">I</span>
+            <span class="span6">N</span>
+            <span class="span7">G</span>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="./assets/js/public.js"></script>
+<script type="text/javascript">
+window.onload = function() {
+    // 两秒后展示
+    // var timeOut = setTimeout(function() {
+    $(".loading").fadeOut(1000);
+    // }, 2000);
+};
+</script>
+
+</html>

@@ -62,33 +62,33 @@ gulp.task('html', function() {
 //压缩js
 gulp.task("script", function() {
 
-    gulp.src(['src/js/*.js'])
+    gulp.src(['src/assets/js/*.js'])
         .pipe(sourcemaps.init({ loadMaps: true }))
         .pipe(ugLify())
         .pipe(sourcemaps.write('./'))
-        .pipe(gulp.dest('dist/js'))
+        .pipe(gulp.dest('dist/assets/js'))
 
 });
 
 // 压缩图片
 gulp.task('images', function() {
 
-    gulp.src(['./src/img/*.jpg', './src/img/*.png'])
+    gulp.src(['./src/assets/img/*.jpg', './src/assets/img/*.png'])
         .pipe(changed('dist/img', { hasChanged: changed.compareSha1Digest }))
         .pipe(imageMin({
             progressive: true, // 无损压缩JPG图片
             svgoPlugins: [{ removeViewBox: false }], // 不移除svg的viewbox属性
             use: [pngquant()] // 使用pngquant插件进行深度压缩
         }))
-        .pipe(gulp.dest('dist/img'))
+        .pipe(gulp.dest('dist/assets/img'))
 
-    gulp.src('./src/img/*.*')
+    gulp.src('./src/assets/img/*.*')
         .pipe(imageMin({
             progressive: true, // 无损压缩JPG图片
             svgoPlugins: [{ removeViewBox: false }], // 不移除svg的viewbox属性
             use: [pngquant()] // 使用pngquant插件进行深度压缩
         }))
-        .pipe(gulp.dest('dist/img'))
+        .pipe(gulp.dest('dist/assets/img'))
 
 });
 //删除dist下的所有文件
@@ -117,5 +117,5 @@ gulp.task('distServe', ['copy'], function() {
 
 
 // gulp distServe->编译环境 srcServe->源码环境
-// gulp.task('default', ['distServe']);
-gulp.task('default', ['srcServe']);
+gulp.task('default', ['distServe']);
+// gulp.task('default', ['srcServe']);
